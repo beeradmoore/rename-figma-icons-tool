@@ -13,9 +13,18 @@
     <Authors>beeradmoore</Authors>
     <Company>beeradmoore</Company>
     <Description>Renames exported assets from Figma into the correct directories, useful for renaming suffix files into Android drawable directories.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/beeradmoore/rename-figma-icons-tool</RepositoryUrl>
+    <RespositoryType>git</RespositoryType>
+    <PackageTags>figma;tool;Xamarin;Android;Xamarin.Android;net6-android</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <None Remove=".DS_Store" />
     <None Remove="nupkg/" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
